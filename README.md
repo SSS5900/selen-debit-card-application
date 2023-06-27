@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/1wf64yvamawycs70?svg=true)](https://ci.appveyor.com/project/SSS5900/selen-debit-card-application)
