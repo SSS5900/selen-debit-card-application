@@ -42,8 +42,8 @@ public class DebitCardTest {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Петров Иван");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79091112233");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
-        driver.findElement(By.cssSelector("button-text")).click();
-//        driver.findElement(By.className("button-text")).click();
+//        driver.findElement(By.cssSelector("button-text")).click();
+        driver.findElement(By.className("button-text")).click();
         String expected = "Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
         String actual = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText().trim();
         assertEquals(expected, actual);
